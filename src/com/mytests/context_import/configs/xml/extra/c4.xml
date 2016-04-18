@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="b4" class="com.mytests.context_import.beans.B4">
+        <property name="b2" ref="b21"/>
+    </bean>
+    <bean id="b21" class="com.mytests.context_import.beans.B2"/>
+</beans>
