@@ -11,6 +11,8 @@ import org.springframework.context.annotation.Configuration;
 public class SuperConfigImpl1 extends SuperConfig {
     @Bean() // should not be detected
     B6 b6(){
-        return new B6();
+        B6 b6 = new B6();
+        b6.setId("b6");
+        return b6;
     }
 }
