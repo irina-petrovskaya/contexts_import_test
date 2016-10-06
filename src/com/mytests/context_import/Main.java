@@ -10,8 +10,7 @@ public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ConfigMain.class);
         String[] beans = ctx.getBeanDefinitionNames();
-        for (int i = 0; i < beans.length; i++) {
-            String bean = beans[i];
+        for (String bean : beans) {
             System.out.println(bean);
         }
     }
